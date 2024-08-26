@@ -22,7 +22,6 @@ export class HomeComponent implements OnInit {
     this.http.get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@chukwugodwinc').subscribe(
       (res: any) => {
         this.blogItem = res.items
-        console.log(this.blogItem)
 
       },
       (err:any) => {}
