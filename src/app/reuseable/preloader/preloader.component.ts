@@ -16,10 +16,8 @@ export class PreloaderComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => {
-      this.isLoading = false
-    },3000);
-    
+      this.isLoading = false;
+    }, 1500);
   }
-
 
 }
